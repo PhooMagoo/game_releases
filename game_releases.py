@@ -27,6 +27,8 @@ text_file = open("game_releases.txt", "r")
 
 res = text_file.read()
 
+text_file.close()
+
 names = regexName.findall(res)
 dates = regexDate.findall(res)
 
