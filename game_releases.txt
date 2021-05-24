@@ -1,0 +1,1192 @@
+
+<!doctype html>
+<html lang="en" class="js no-touch" itemscope>
+	<head>
+		<title>New Releases, Upcoming Games, and New Contributions - GameFAQs</title>
+
+				<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+				<meta name="description" content="The latest FAQs, cheats, reviews, and saves posted to the GameFAQs in the last seven days." />
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRBR-a22c617a7b2aab2da1c",applicationID:"578849005"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(7),c=e(8),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(9);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e){return!(!e||!e.protocol||"file:"===e.protocol)}t.exports=r},{}],4:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(6),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],5:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],6:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],7:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],8:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],9:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?u(e,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){e&&a&&e(n,r,i);for(var c=t(i),f=v(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[h[n]];return p&&p.push([b,n,r,c]),c}}function o(e,t){y[e]=v(e).concat(t)}function m(e,t){var n=y[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return y[e]||[]}function g(e){return p[e]=p[e]||i(n)}function w(e,t){s(e,function(e,n){t=t||"feature",h[n]=t,t in d||(d[t]=[])})}var y={},h={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:w,abort:c,aborted:!1};return b}function o(e){return u(e,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=e("gos"),s=e(7),d={},p={},l=t.exports=i();t.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=x.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=l.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+x.offset],null,"api")}var a=e(2),c=e("handle"),f=e(7),u=e("ee"),s=e(5),d=e(3),p=window,l=p.document,m="addEventListener",v="attachEvent",g=p.XMLHttpRequest,w=g&&g.prototype;if(d(p.location)){NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:g,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1208.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:b,userAgent:s};e(1),e(4),l[m]?(l[m]("DOMContentLoaded",o,!1),p[m]("load",r,!1)):(l[v]("onreadystatechange",i),p[v]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0}},{}],"wrap-function":[function(e,t,n){function r(e,t){function n(t,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],e)}c(n+"start",[o,a,f],s,u);try{return p=t.apply(a,o)}catch(m){throw c(n+"err",[o,a,m],s,u),m}finally{c(n+"end",[o,a,p],s,u)}}return a(t)?t:(n||(n=""),nrWrapper[p]=t,o(t,nrWrapper,e),nrWrapper)}function r(e,t,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<t.length;u++)f=t[u],c=e[f],a(c)||(e[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!m||t){var c=m;m=!0;try{e.emit(n,r,o,t,a)}catch(f){i([f,n,r,o],e)}m=c}}return e||(e=s),n.inPlace=r,n.flag=p,n}function i(e,t){t||(t=s);try{t.emit("internal-error",e)}catch(n){}}function o(e,t,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(e);return r.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(o){i([o],n)}for(var a in e)l.call(e,a)&&(t[a]=e[a]);return t}function a(e){return!(e&&e instanceof Function&&e.apply&&!e[p])}function c(e,t){var n=t(e);return n[p]=e,o(e,n,s),n}function f(e,t,n){var r=e[t];e[t]=c(r,n)}function u(){for(var e=arguments.length,t=new Array(e),n=0;n<e;++n)t[n]=arguments[n];return t}var s=e("ee"),d=e(8),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;t.exports=r,t.exports.wrapFunction=c,t.exports.wrapInPlace=f,t.exports.argsToArray=u},{}]},{},["loader"]);</script>
+		<meta content="origin" id="mref" name="referrer" />
+
+		
+		
+		
+				
+					  		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  
+	  		<link href="https://fonts.googleapis.com/css?family=Roboto:900|Roboto+Condensed|Roboto+Mono" rel="stylesheet" type="text/css">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<link href="/a/css/v13.20210521195711.css" rel="stylesheet" type="text/css">
+		
+		
+				<link rel="canonical" href="https://gamefaqs.gamespot.com/new" />
+		
+		
+		
+		<meta id="utag-data" name="utag-data" content="{&quot;siteType&quot;:&quot;gamefaqs-desktop&quot;,&quot;siteEdition&quot;:&quot;ww&quot;,&quot;deviceType&quot;:&quot;desktop&quot;,&quot;siteSection&quot;:&quot;What&#039;s New&quot;,&quot;pageType&quot;:&quot;new_door&quot;,&quot;siteHier&quot;:&quot;What&#039;s New|Door&quot;,&quot;userState&quot;:&quot;non authenticated&quot;,&quot;userType&quot;:&quot;anon&quot;,&quot;userId&quot;:null,&quot;regionCode&quot;:840,&quot;pageViewGuid&quot;:&quot;fd22a064-79c1-4492-9416-737452a2038c&quot;,&quot;articleType&quot;:null,&quot;articleTitle&quot;:null,&quot;productId&quot;:null,&quot;productSeriesId&quot;:null,&quot;productName&quot;:&quot;|&quot;,&quot;productGenre&quot;:null,&quot;productPlatform&quot;:null,&quot;_test&quot;:&quot;not in test&quot;,&quot;page_event&quot;:null,&quot;soastaPageType&quot;:&quot;new_door&quot;}" />
+<meta id="ad-settings" content="" data-settings="{&quot;script&quot;:&quot;\/\/securepubads.g.doubleclick.net\/tag\/js\/gpt.js&quot;,&quot;target_params&quot;:{&quot;ptype&quot;:&quot;new_door&quot;,&quot;user&quot;:&quot;anon&quot;,&quot;session&quot;:&quot;b&quot;,&quot;firstpg&quot;:1},&quot;unit_name&quot;:&quot;\/8264\/aw-gamefaqs\/new&quot;,&quot;deferred&quot;:true,&quot;service&quot;:&quot;dart&quot;,&quot;client&quot;:&quot;xfp&quot;,&quot;load_in_head&quot;:&quot;gpt&quot;,&quot;single_request&quot;:true,&quot;disable_initial_load&quot;:true,&quot;enable_callback&quot;:true,&quot;enable_collapse_empty_divs&quot;:false,&quot;slot_order&quot;:[&quot;skybox-nav&quot;,&quot;omni-skybox-nav&quot;,&quot;leader_top&quot;,&quot;leader_plus_top&quot;,&quot;mpu_top&quot;,&quot;mpu_plus_top&quot;,&quot;interstitial&quot;,&quot;native-top&quot;,&quot;incontent-ad&quot;,&quot;mpu_bottom&quot;,&quot;leader_bottom&quot;],&quot;mapped_units&quot;:{&quot;skybox-nav&quot;:{&quot;size&quot;:[[5,5]],&quot;target&quot;:{&quot;pos&quot;:&quot;nav&quot;}},&quot;omni-skybox-nav&quot;:{&quot;size&quot;:[[5,5],[6,6]],&quot;target&quot;:{&quot;pos&quot;:&quot;nav&quot;}},&quot;leader_plus_top&quot;:{&quot;size&quot;:[[728,90],[970,66],[970,250]],&quot;target&quot;:{&quot;pos&quot;:&quot;top&quot;}},&quot;leader_top&quot;:{&quot;size&quot;:[[728,90],[970,66]],&quot;target&quot;:{&quot;pos&quot;:&quot;top&quot;}},&quot;leader_bottom&quot;:{&quot;size&quot;:[[728,90],[970,66]],&quot;target&quot;:{&quot;pos&quot;:&quot;bottom&quot;}},&quot;mpu_plus_top&quot;:{&quot;size&quot;:[[300,250],[300,600]],&quot;target&quot;:{&quot;pos&quot;:&quot;top&quot;}},&quot;mpu_top&quot;:{&quot;size&quot;:[[300,250]],&quot;target&quot;:{&quot;pos&quot;:&quot;top&quot;}},&quot;mpu_bottom&quot;:{&quot;size&quot;:[[300,250]],&quot;target&quot;:{&quot;pos&quot;:&quot;bottom&quot;}},&quot;native-top&quot;:{&quot;size&quot;:[[11,11],[728,90],[970,66],&quot;fluid&quot;],&quot;target&quot;:{&quot;pos&quot;:&quot;top&quot;}},&quot;incontent-ad&quot;:{&quot;size&quot;:[[5,5],[728,90],[970,66],&quot;fluid&quot;],&quot;target&quot;:{&quot;pos&quot;:&quot;top&quot;}},&quot;interstitial&quot;:{&quot;outOfPage&quot;:true}}}" />
+<meta id="view-guid-meta" name="view-guid-meta" itemprop="view-guid" content="fd22a064-79c1-4492-9416-737452a2038c">
+<meta id="bsm-pub-zone-meta" name="bsm-pub-zone-meta" itemprop="bsm-pub-zone" content="gamefaqs.com/nucleus">
+<meta id="bsm-sizes-meta" name="bsm-sizes-meta" itemprop="bsm-sizes" content="728x90 300x250">
+
+		
+				<script class="optanon-category-C0002" type="text/plain">!function(co,h,e,s,i,o,n){ var d='documentElement';var a='className';h[d][a]+=' preampjs fusejs'; n.k=e;co._Cohesion=n;co._Preamp={ k:s,start:new Date};co._Fuse={ k:i };co._Tagular={ k:o };[e,s,i,o].map(function(x){ co[x]=co[x]||function(){ (co[x].q=co[x].q||[]).push([].slice.call(arguments)) } }); h.addEventListener('DOMContentLoaded',function(){ co.setTimeout(function(){ var u=h[d][a];h[d][a]=u.replace(/ ?preampjs| ?fusejs/g,'') },3e3); co._Preamp.docReady=co._Fuse.docReady=!0});var z=h.createElement('script'); z.async=1;z.src='https://cdn.cohesionapps.com/cohesion/cohesion-latest.min.js';h.head.appendChild(z); }  (window,document,'cohesion','preamp','fuse','tagular',{ 
+        tagular:{ writeKey:'wk_1kYs5eN6U9uIferNb8RjqpIOZy0', sourceKey:'src_1kYs5kGF0gH8ObQlZU8ldA7KFYZ', apiVersion: 'v2/t' } })
+       </script>
+
+       			<script>(function(){ if(window.BOOMR&&window.BOOMR.version){ return }var dom,doc,where,iframe=document.createElement("iframe"),win=window;function boomerangSaveLoadTime(e){ win.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(win.addEventListener){ win.addEventListener("load",boomerangSaveLoadTime,false)}else if(win.attachEvent){ win.attachEvent("onload",boomerangSaveLoadTime)}iframe.src="javascript:void(0)";iframe.title="";iframe.role="presentation";(iframe.frameElement||iframe).style.cssText="width:0;height:0;border:0;display:none;";where=document.getElementsByTagName("script")[0];where.parentNode.insertBefore(iframe,where);try{ doc=iframe.contentWindow.document}catch(e){ dom=document.domain;iframe.src="javascript:var d=document.open();d.domain='"+dom+"';void(0);";doc=iframe.contentWindow.document}doc.open()._l=function(){ var js=this.createElement("script");if(dom){ this.domain=dom}js.id="boomr-if-as";js.src="//c.go-mpulse.net/boomerang/MYNP2-T3LG3-6AAGT-L5R5G-J95EV";BOOMR_lstart=(new Date).getTime();this.body.appendChild(js)};doc.write('<body onload="document._l();">');doc.close()})();</script>
+
+				<script type="text/javascript" src="/a/js/jquery_gf.20210521195711.js"></script>
+		<script type="text/javascript" src="/a/js/gamefaqs.20210521195711.js"></script>
+		<script type="text/javascript" src="/a/js/quill.20210521195711.js"></script>
+
+				<script type="text/javascript">
+		 function setUpAgknTag(tag){ tag.setBpId("cbsinteractive"); }
+		var vguid = $('meta[id=view-guid-meta]').attr("content").substr(0, 24) + Math.random().toString(16).substr(2,12);
+		$('meta[id=view-guid-meta]').attr("content", vguid);
+		window.chsn_ad_id = vguid;
+		</script>
+
+		
+	  		  	<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="afd6fcc3-97e8-40b2-8199-fc054fbcc8ab"></script>
+	  	<script src="//cmg1.cbsistatic.com/privacy/optanon/optanon-v1.1.0.js " type="text/javascript" id="bb-cbsoptanon" async></script>
+	  	<script>window.BidBarrel=window.BidBarrel||{ };window.BidBarrel.queue = window.BidBarrel.queue||[];</script><script src="//securepubads.g.doubleclick.net/tag/js/gpt.js" type="text/javascript" async></script><script class="optanon-category-C0004" type="text/plain" charset="utf-8" src="//js-sec.indexww.com/ht/p/183728-151106130411182.js" async></script><script class="optanon-category-C0004" type="text/plain" charset="utf-8" src="//c.amazon-adsystem.com/aax2/apstag.js" async></script><script src="/a/js/bidbarrel-gamefaqs.20210521195711.js"></script>
+	  	<script class="optanon-category-C0004" type="text/plain" src="//js.agkn.com/prod/v0/tag.js" async></script>	  	<script type="text/javascript">!function(n){ var o=window,a="cbsoptanon",c="cmd",d="config";o[a]=o[a]?o[a]:{},o[a][c]=o[a][c]?o[a][c]:[],o[a][d]=o[a][d]?o[a][d]:[],["onIframesReady","onFormsReady","onScriptsReady","onAdsReady"].forEach(function(n){ o[a][n]=o[a][n]||function(){ var d=arguments;o[a][c].push(function(){ o[a][n].apply(o[a],d)})}})}();window.cbsoptanon.config.push({ enableServices: false,euMaxAttempts: 25,countryCodeMaxAttempts: 25,oneTrustTimeout: 700,setNpaOnConsentChange: true });</script>
+
+	</head>
+	<body class="">
+		<div id="fullscreen_overlay"></div>
+				<div class="wrapper g_new">
+						<div id="menubutton" class="menubutton" onclick="topnav_side_open();"><i class="fa fa-bars"></i> Menu</div><div class="sidenav" id="sidenav"><div class="sidenav_div"><div id="menuclose" class="menuclose" onclick="topnav_side_close();"><i class="fa fa-times fa-2x"></i></div><ul class="sidenav_menu"><li><a href="/">Home</a></li><li><a href="/answers">Q&amp;A</a></li><li><a href="/boards">Boards</a></li><li><a href="/community">Community</a></li><li><a href="/contribute">Contribute</a></li><li><a href="/games">Games</a></li><li><a href="/new">What&rsquo;s&nbsp;New</a></li></ul><br /><ul class="sidenav_menu"><li><a href="/3ds">3DS</a></li><li><a href="/android">Android</a></li><li><a href="/iphone">iOS</a></li><li><a href="/pc">PC</a></li><li><a href="/ps3">PlayStation&nbsp;3</a></li><li><a href="/ps4">PlayStation&nbsp;4</a></li><li><a href="/ps5">PlayStation&nbsp;5</a></li><li><a href="/switch">Switch</a></li><li><a href="/vita">Vita</a></li><li><a href="/xbox360">Xbox 360</a></li><li><a href="/xboxone">Xbox One</a></li><li><a href="/xbox-series-x">Xbox Series</a></li><li><a href="/games/systems">More Systems</a></li></ul></div></div><div class="masthead"><div class="masthead_strip"><div class="container row"><nav class="masthead_systems"><a href="/pc">PC</a><a href="/ps4">PS4</a><a href="/ps5">PS5</a><a href="/switch">Switch</a><a href="/xboxone">Xbox One</a><a href="/xbox-series-x">Xbox Series</a><span class="masthead_platform_drop"><a class="mast_nav_last" href="/games/systems" >More&nbsp;Systems <i id="sysdrop_down" class="fa fa-caret-down"></i><i id="sysdrop_up" class="fa fa-caret-up"></i></a><ul id="sysdrop" class="masthead_platform_subnav"><li class="masthead_platform_subnav_item"><a href="/3ds">3DS</a></li><li class="masthead_platform_subnav_item"><a href="/android">Android</a></li><li class="masthead_platform_subnav_item"><a href="/ds">DS</a></li><li class="masthead_platform_subnav_item"><a href="/gba">Game Boy Advance</a></li><li class="masthead_platform_subnav_item"><a href="/gamecube">GameCube</a></li><li class="masthead_platform_subnav_item"><a href="/iphone">iOS</a></li><li class="masthead_platform_subnav_item"><a href="/n64">Nintendo 64</a></li><li class="masthead_platform_subnav_item"><a href="/ps">PlayStation</a></li><li class="masthead_platform_subnav_item"><a href="/ps2">PlayStation 2</a></li><li class="masthead_platform_subnav_item"><a href="/ps3">PlayStation 3</a></li><li class="masthead_platform_subnav_item"><a href="/psp">PSP</a></li><li class="masthead_platform_subnav_item"><a href="/vita">Vita</a></li><li class="masthead_platform_subnav_item"><a href="/wii">Wii</a></li><li class="masthead_platform_subnav_item"><a href="/wii-u">Wii U</a></li><li class="masthead_platform_subnav_item"><a href="/xbox360">Xbox 360</a></li><li class="masthead_platform_subnav_item"><a href="/games/systems">And 121 More...</a></li></ul></span></nav><div class="masthead_user">
+	<a href="/user/login" onclick="return show_login();"><i class="fa fa-key nouser"></i>Log In</a>
+	<a href="/user/register" onclick="return show_signup('header');" class="nouser">Sign Up</a>
+</div>
+<div id="login_dialog">
+<div class="pod">
+	<div class="head"><h2 class="title">Log In to GameFAQs</h2></div>
+	<div class="body">
+
+<form class="login" id="login" method="post" action="/user/login" onsubmit="return submit_login();"><input type="hidden" name="path" value="/new" /><input class="hidden" type="hidden" name="key" value="d2ece57a">
+	<table class="contrib">
+
+	<tr>
+	<td>
+	<input class="text login_email" id="login_email" type="text" name="EMAILADDR" maxlength="90" placeholder="Username/Email" />
+	</td>
+	</tr>
+	
+	<tr>
+	<td>
+	<input class="text login_password" id="login_password" type="password" name="PASSWORD" maxlength="64" placeholder="Password"/>
+	</td>
+	</tr>
+	
+	<tr>
+	<td>
+	<input id="kmli" type="checkbox" name="kmli" checked="CHECKED" /><label for="kmli"> Keep me logged in on this device</label>
+	</td>
+	</tr>
+
+	<tr><td>
+	
+	<input class="btn btn_primary btn_wide login_submit" id="login_submit" type="submit" value="login" />
+	
+	</td></tr>
+	<tr><td>
+	
+	<a href="/user/recover">Forgot your username or password?</a><br /><br />
+	<a href="/user/register" onclick="$('#login_dialog').dialog('close'); return show_signup('login_box');">Don't have an account? Sign up for free!</a>
+	
+	</td></tr>
+	</table>
+	
+</form>
+
+</div>
+</div>
+</div>
+
+
+</div></div><div class="masthead_main container row"><div class="masthead_logo_search"><div class="masthead_logo"><a href="/">GameFAQs</a></div><div class="masthead_search"><form class="search" method="get" action="/search"><fieldset><button type="submit"><i class="fa fa-search"></i></button><input type="text" id="searchtextbox" name="game" value="" class="search" placeholder="Search Game Titles" /></fieldset></form></div></div><div class="masthead_nav"><nav><a href="/answers" style="padding-right:15px;">Q&amp;A</a><a href="/boards">Boards</a><a class="navtrim" href="/community">Community</a><a class="navtrim" href="/contribute">Contribute</a><a class="navtrim" href="/games">Games</a><a class="notab" href="/new">What&rsquo;s New</a><a class="search_link" onclick="topnav_show_search();"><i class="fa fa-2x fa-search" title="Search"></i></a></nav></div></div></div>
+			
+			
+						
+			
+									
+						<div id="mantle_skin">
+													<div class="js-mapped-ad ad ad_leader_top" data-ad-type="leader_top"><div class="ad_wrap "></div></div>
+								
+								<div id="content" class="container">
+
+															
+																<div class="main_content row">
+							<div class="span8">
+								<header class="page-header">
+    <h1 class="page-title">New Games</h1>
+</header>
+
+<div class="head"><h2 class="title">Popular New Releases</h2></div>
+<div class="search_results_title">
+            <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/7/7/9/755779_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps5/292820-resident-evil-village">Resident Evil Village</a><span title="Metascore" class="metascore_small metacritic_high">84</span></div>
+                    <div class="sr_info">May 7
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps5/292820-resident-evil-village">PS5</a>
+                                                            <a href="/ps4/311161-resident-evil-village">PS4</a>
+                                                            <a href="/xbox-series-x/292893-resident-evil-village">XBSX</a>
+                                                            <a href="/pc/292894-resident-evil-village">PC</a>
+                                                            <a href="/xboxone/311160-resident-evil-village">XONE</a>
+                                                            <a href="/stadia/316188-resident-evil-village">STA</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                    <a href="/ps5/292820-resident-evil-village/faqs">Guides</a>, 
+                                                                                    <a href="/ps5/292820-resident-evil-village/answers">Q&amp;A</a>, 
+                                                        <a href="/ps5/292820-resident-evil-village/videos">Videos</a>, 
+                                                        <a href="/boards/292820-resident-evil-village">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/5/4/6/797546_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/switch/319097-rise-eterna">Rise Eterna</a></div>
+                    <div class="sr_info">May 13
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/switch/319097-rise-eterna">NS</a>
+                                                            <a href="/pc/254379-rise-eterna">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                <a href="/switch/319097-rise-eterna/answers">Q&amp;A</a>, 
+                                                        <a href="/boards/319097-rise-eterna">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/1/0/4/791104_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps4/305500-mass-effect-legendary-edition">Mass Effect Legendary Edition</a><span title="Metascore" class="metascore_small metacritic_high">87</span></div>
+                    <div class="sr_info">May 14
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps4/305500-mass-effect-legendary-edition">PS4</a>
+                                                            <a href="/pc/305502-mass-effect-legendary-edition">PC</a>
+                                                            <a href="/xboxone/305501-mass-effect-legendary-edition">XONE</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                    <a href="/ps4/305500-mass-effect-legendary-edition/faqs">Guides</a>, 
+                                                                                    <a href="/ps4/305500-mass-effect-legendary-edition/cheats">Cheats</a>, 
+                                                        <a href="/ps4/305500-mass-effect-legendary-edition/answers">Q&amp;A</a>, 
+                                                        <a href="/ps4/305500-mass-effect-legendary-edition/videos">Videos</a>, 
+                                                        <a href="/boards/305500-mass-effect-legendary-edition">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/9/3/6/784936_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps4/311002-subnautica-below-zero">Subnautica: Below Zero</a><span title="Metascore" class="metascore_small metacritic_high">82</span></div>
+                    <div class="sr_info">May 14
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps4/311002-subnautica-below-zero">PS4</a>
+                                                            <a href="/pc/256430-subnautica-below-zero">PC</a>
+                                                            <a href="/switch/298299-subnautica-below-zero">NS</a>
+                                                            <a href="/ps5/310999-subnautica-below-zero">PS5</a>
+                                                            <a href="/xbox-series-x/311000-subnautica-below-zero">XBSX</a>
+                                                            <a href="/xboxone/311001-subnautica-below-zero">XONE</a>
+                                                            <a href="/mac/256516-subnautica-below-zero">MAC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                <a href="/ps4/311002-subnautica-below-zero/answers">Q&amp;A</a>, 
+                                                        <a href="/ps4/311002-subnautica-below-zero/videos">Videos</a>, 
+                                                        <a href="/boards/311002-subnautica-below-zero">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/7/7/4/787774_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/switch/313518-famicom-detective-club-the-girl-who-stands-behind">Famicom Detective Club: The Girl Who Stands Behind</a><span title="Metascore" class="metascore_small metacritic_mid">72</span></div>
+                    <div class="sr_info">May 14
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/switch/313518-famicom-detective-club-the-girl-who-stands-behind">NS</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                <a href="/switch/313518-famicom-detective-club-the-girl-who-stands-behind/answers">Q&amp;A</a>, 
+                                                        <a href="/boards/313518-famicom-detective-club-the-girl-who-stands-behind">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/7/7/3/787773_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/switch/313515-famicom-detective-club-the-missing-heir">Famicom Detective Club: The Missing Heir</a><span title="Metascore" class="metascore_small metacritic_mid">72</span></div>
+                    <div class="sr_info">May 14
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/switch/313515-famicom-detective-club-the-missing-heir">NS</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                <a href="/switch/313515-famicom-detective-club-the-missing-heir/answers">Q&amp;A</a>, 
+                                                        <a href="/switch/313515-famicom-detective-club-the-missing-heir/videos">Videos</a>, 
+                                                        <a href="/boards/313515-famicom-detective-club-the-missing-heir">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/6/4/1/746641_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/pc/286480-siege-survival-gloria-victis">Siege Survival: Gloria Victis</a><span title="Metascore" class="metascore_small metacritic_mid">65</span></div>
+                    <div class="sr_info">May 18
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/pc/286480-siege-survival-gloria-victis">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                <a href="/pc/286480-siege-survival-gloria-victis/answers">Q&amp;A</a>, 
+                                                        <a href="/boards/286480-siege-survival-gloria-victis">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/8/4/4/712844_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/pc/264992-the-wild-at-heart">The Wild At Heart</a><span title="Metascore" class="metascore_small metacritic_mid">74</span></div>
+                    <div class="sr_info">May 19
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/pc/264992-the-wild-at-heart">PC</a>
+                                                            <a href="/xbox-series-x/316704-the-wild-at-heart">XBSX</a>
+                                                            <a href="/xboxone/316643-the-wild-at-heart">XONE</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                <a href="/pc/264992-the-wild-at-heart/answers">Q&amp;A</a>, 
+                                                        <a href="/boards/264992-the-wild-at-heart">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/5/6/6/790566_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/pc/315172-frozenheim">Frozenheim</a></div>
+                    <div class="sr_info">May 20
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/pc/315172-frozenheim">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                <a href="/pc/315172-frozenheim/answers">Q&amp;A</a>, 
+                                                        <a href="/boards/315172-frozenheim">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/1/4/3/791143_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/xboxone/315528-just-die-already">Just Die Already</a></div>
+                    <div class="sr_info">May 20
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/xboxone/315528-just-die-already">XONE</a>
+                                                            <a href="/pc/290939-just-die-already">PC</a>
+                                                            <a href="/switch/315527-just-die-already">NS</a>
+                                                            <a href="/ps4/315529-just-die-already">PS4</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                <a href="/xboxone/315528-just-die-already/answers">Q&amp;A</a>, 
+                                                        <a href="/xboxone/315528-just-die-already/videos">Videos</a>, 
+                                                        <a href="/boards/315528-just-die-already">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/3/5/0/792350_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/switch/296161-shin-megami-tensei-iii-nocturne-hd-remaster">Shin Megami Tensei III: Nocturne HD Remaster</a></div>
+                    <div class="sr_info">May 21
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/switch/296161-shin-megami-tensei-iii-nocturne-hd-remaster">NS</a>
+                                                            <a href="/ps4/296207-shin-megami-tensei-iii-nocturne-hd-remaster">PS4</a>
+                                                            <a href="/pc/316101-shin-megami-tensei-iii-nocturne-hd-remaster">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                <a href="/switch/296161-shin-megami-tensei-iii-nocturne-hd-remaster/answers">Q&amp;A</a>, 
+                                                        <a href="/switch/296161-shin-megami-tensei-iii-nocturne-hd-remaster/videos">Videos</a>, 
+                                                        <a href="/boards/296161-shin-megami-tensei-iii-nocturne-hd-remaster">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/8/1/1/787811_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/switch/313528-knockout-city">Knockout City</a><span title="Metascore" class="metascore_small metacritic_high">77</span></div>
+                    <div class="sr_info">May 21
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/switch/313528-knockout-city">NS</a>
+                                                            <a href="/pc/313536-knockout-city">PC</a>
+                                                            <a href="/ps4/313538-knockout-city">PS4</a>
+                                                            <a href="/xboxone/313537-knockout-city">XONE</a>
+                                                            <a href="/xbox-series-x/321351-knockout-city">XBSX</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                <a href="/switch/313528-knockout-city/answers">Q&amp;A</a>, 
+                                                        <a href="/switch/313528-knockout-city/videos">Videos</a>, 
+                                                        <a href="/boards/313528-knockout-city">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+<div class="spacer"></div>
+<div class="head"><h2 class="title">Coming Soon</h2></div>
+<div class="search_results_title">
+            <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/5/1/3/642513_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps4/217658-biomutant">Biomutant</a></div>
+                                        <div class="sr_info">May 25</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps4/217658-biomutant">PS4</a>
+                                                            <a href="/xbox-series-x/320945-biomutant">XBSX</a>
+                                                            <a href="/xboxone/217659-biomutant">XONE</a>
+                                                            <a href="/pc/217660-biomutant">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/ps4/217658-biomutant/videos">Videos</a>, 
+                                                        <a href="/boards/217658-biomutant">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/0/1/1/799011_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/switch/320590-power-rangers-battle-for-the-grid-super-edition">Power Rangers: Battle for the Grid - Super Edition</a></div>
+                                        <div class="sr_info">May 25</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/switch/320590-power-rangers-battle-for-the-grid-super-edition">NS</a>
+                                                            <a href="/ps4/320591-power-rangers-battle-for-the-grid-super-edition">PS4</a>
+                                                            <a href="/xboxone/320589-power-rangers-battle-for-the-grid-super-edition">XONE</a>
+                                                            <a href="/pc/320588-power-rangers-battle-for-the-grid-super-edition">PC</a>
+                                                            <a href="/stadia/320594-power-rangers-battle-for-the-grid-super-edition">STA</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/switch/320590-power-rangers-battle-for-the-grid-super-edition/videos">Videos</a>, 
+                                                        <a href="/boards/320590-power-rangers-battle-for-the-grid-super-edition">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/2/0/2/760202_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps4/295883-king-of-seas">King of Seas</a></div>
+                                        <div class="sr_info">May 25</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps4/295883-king-of-seas">PS4</a>
+                                                            <a href="/switch/295885-king-of-seas">NS</a>
+                                                            <a href="/xboxone/295884-king-of-seas">XONE</a>
+                                                            <a href="/pc/295562-king-of-seas">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/ps4/295883-king-of-seas/videos">Videos</a>, 
+                                                        <a href="/boards/295883-king-of-seas">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/4/7/6/799476_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/switch/273122-aluna-sentinel-of-the-shards">Aluna: Sentinel of the Shards</a></div>
+                                        <div class="sr_info">May 26</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/switch/273122-aluna-sentinel-of-the-shards">NS</a>
+                                                            <a href="/pc/286270-aluna-sentinel-of-the-shards">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/switch/273122-aluna-sentinel-of-the-shards/videos">Videos</a>, 
+                                                        <a href="/boards/273122-aluna-sentinel-of-the-shards">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/9/7/7/768977_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps4/293784-earth-defense-force-world-brothers">Earth Defense Force: World Brothers</a></div>
+                                        <div class="sr_info">May 27</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps4/293784-earth-defense-force-world-brothers">PS4</a>
+                                                            <a href="/switch/293785-earth-defense-force-world-brothers">NS</a>
+                                                            <a href="/pc/317061-earth-defense-force-world-brothers">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/ps4/293784-earth-defense-force-world-brothers/videos">Videos</a>, 
+                                                        <a href="/boards/293784-earth-defense-force-world-brothers">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/7/3/5/798735_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps4/299132-warhammer-age-of-sigmar-storm-ground">Warhammer Age of Sigmar: Storm Ground</a></div>
+                                        <div class="sr_info">May 27</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps4/299132-warhammer-age-of-sigmar-storm-ground">PS4</a>
+                                                            <a href="/switch/299129-warhammer-age-of-sigmar-storm-ground">NS</a>
+                                                            <a href="/xboxone/299130-warhammer-age-of-sigmar-storm-ground">XONE</a>
+                                                            <a href="/pc/299131-warhammer-age-of-sigmar-storm-ground">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/ps4/299132-warhammer-age-of-sigmar-storm-ground/videos">Videos</a>, 
+                                                        <a href="/boards/299132-warhammer-age-of-sigmar-storm-ground">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/4/1/2/797412_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps4/298774-wonder-boy-asha-in-monster-world">Wonder Boy: Asha in Monster World</a></div>
+                                        <div class="sr_info">May 28</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps4/298774-wonder-boy-asha-in-monster-world">PS4</a>
+                                                            <a href="/switch/298717-wonder-boy-asha-in-monster-world">NS</a>
+                                                            <a href="/pc/320214-wonder-boy-asha-in-monster-world">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/boards/298774-wonder-boy-asha-in-monster-world">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/8/8/5/791885_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps5/316032-necromunda-hired-gun">Necromunda: Hired Gun</a></div>
+                                        <div class="sr_info">June 1</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps5/316032-necromunda-hired-gun">PS5</a>
+                                                            <a href="/ps4/316033-necromunda-hired-gun">PS4</a>
+                                                            <a href="/xbox-series-x/315933-necromunda-hired-gun">XBSX</a>
+                                                            <a href="/pc/316026-necromunda-hired-gun">PC</a>
+                                                            <a href="/xboxone/315941-necromunda-hired-gun">XONE</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/ps5/316032-necromunda-hired-gun/videos">Videos</a>, 
+                                                        <a href="/boards/316032-necromunda-hired-gun">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/6/9/8/703698_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/pc/258942-going-medieval">Going Medieval</a></div>
+                                        <div class="sr_info">June 1</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/pc/258942-going-medieval">PC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/boards/258942-going-medieval">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/1/4/4/762144_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps4/273403-guilty-gear-strive-">Guilty Gear -Strive-</a></div>
+                                        <div class="sr_info">June 8</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps4/273403-guilty-gear-strive-">PS4</a>
+                                                            <a href="/ps5/297119-guilty-gear-strive-">PS5</a>
+                                                            <a href="/pc/297120-guilty-gear-strive-">PC</a>
+                                                            <a href="/arcade/314666-guilty-gear-strive-">ARC</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/ps4/273403-guilty-gear-strive-/videos">Videos</a>, 
+                                                        <a href="/boards/273403-guilty-gear-strive-">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/8/0/8/788808_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps5/314233-final-fantasy-vii-remake-intergrade">Final Fantasy VII Remake Intergrade</a></div>
+                                        <div class="sr_info">June 10</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps5/314233-final-fantasy-vii-remake-intergrade">PS5</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/ps5/314233-final-fantasy-vii-remake-intergrade/videos">Videos</a>, 
+                                                        <a href="/boards/314233-final-fantasy-vii-remake-intergrade">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+                <div class="search_result">
+        <div class="sr_left_block">
+            <div class="sr_img" style="background-image:url(/a/box/7/6/0/755760_thumb.jpg)"></div>
+        </div>
+        <div class="sr_right_block">
+            <div class="sr_header">
+                <div class="sr_title">
+                    <div class="sr_name"><a href="/ps5/292801-ratchet-and-clank-rift-apart">Ratchet & Clank: Rift Apart</a></div>
+                                        <div class="sr_info">June 11</div>
+                </div>
+            </div>
+            <div class="sr_details">
+                        <div class="sr_product">
+                        <div class="sr_product_name">
+                                                            <a href="/ps5/292801-ratchet-and-clank-rift-apart">PS5</a>
+                                                    </div>
+                        
+                        <div class="sr_links">    
+                                                                                                                                            <a href="/ps5/292801-ratchet-and-clank-rift-apart/videos">Videos</a>, 
+                                                        <a href="/boards/292801-ratchet-and-clank-rift-apart">Message Board</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+        
+</div>
+
+<div class="cbox"><a href="/search_advanced?token=recent_releases">More New Releases</a> | <a href="/search_advanced?token=upcoming_releases">More Upcoming Releases</a> | <a href="/new/contributions">New Contributions</a></div>
+
+
+
+
+								
+							</div>
+							<aside class="span4">
+								<div class="pod pod_list sidebar full topgames">
+	<div class="head"><h2 class="title">Latest Guides</h2></div>
+	<div class="body">
+		<ol class="list_flex">
+						<li>
+				<a class="img_med" href="/ps/562323-digimon-world-3">
+					<img class="crop imgboxart" src="/a/box/2/7/3/19273_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ps/562323-digimon-world-3">Digimon World 3</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ps/562323-digimon-world-3/faqs">PS</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ps/197128-dino-crisis">
+					<img class="crop imgboxart" src="/a/box/9/5/7/2957_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ps/197128-dino-crisis">Dino Crisis</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ps/197128-dino-crisis/faqs">PS</a>
+												<a href="/dreamcast/371185-dino-crisis/faqs">DC</a>
+												<a href="/pc/304126-dino-crisis/faqs">PC</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ds/924897-final-fantasy-iii">
+					<img class="crop imgboxart" src="/a/box/9/5/2/21952_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ds/924897-final-fantasy-iii">Final Fantasy III</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ds/924897-final-fantasy-iii/faqs">DS</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ps4/286768-nier-replicant-ver122474487139">
+					<img class="crop imgboxart" src="/a/box/1/7/4/747174_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ps4/286768-nier-replicant-ver122474487139">NieR Replicant ver.1.22474487139...</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ps4/286768-nier-replicant-ver122474487139/faqs">PS4</a>
+												<a href="/pc/286769-nier-replicant-ver122474487139/faqs">PC</a>
+												<a href="/xboxone/286770-nier-replicant-ver122474487139/faqs">XONE</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/snes/588541-ogre-battle-the-march-of-the-black-queen">
+					<img class="crop imgboxart" src="/a/box/9/8/1/50981_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/snes/588541-ogre-battle-the-march-of-the-black-queen">Ogre Battle: The March of the Black Queen</a>
+					</span>
+					<span class="sub plats">
+												<a href="/snes/588541-ogre-battle-the-march-of-the-black-queen/faqs">SNES</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ps5/292820-resident-evil-village">
+					<img class="crop imgboxart" src="/a/box/7/7/9/755779_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ps5/292820-resident-evil-village">Resident Evil Village</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ps5/292820-resident-evil-village/faqs">PS5</a>
+												<a href="/ps4/311161-resident-evil-village/faqs">PS4</a>
+												<a href="/xbox-series-x/292893-resident-evil-village/faqs">XBSX</a>
+												<a href="/pc/292894-resident-evil-village/faqs">PC</a>
+												<a href="/xboxone/311160-resident-evil-village/faqs">XONE</a>
+												<a href="/stadia/316188-resident-evil-village/faqs">STA</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ps4/307089-saga-frontier-remastered">
+					<img class="crop imgboxart" src="/a/box/8/9/9/777899_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ps4/307089-saga-frontier-remastered">SaGa Frontier Remastered</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ps4/307089-saga-frontier-remastered/faqs">PS4</a>
+												<a href="/switch/307090-saga-frontier-remastered/faqs">NS</a>
+												<a href="/pc/307092-saga-frontier-remastered/faqs">PC</a>
+												<a href="/android/307093-saga-frontier-remastered/faqs">AND</a>
+												<a href="/iphone/307091-saga-frontier-remastered/faqs">IOS</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ps2/582958-shin-megami-tensei-nocturne">
+					<img class="crop imgboxart" src="/a/box/0/3/2/44032_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ps2/582958-shin-megami-tensei-nocturne">Shin Megami Tensei: Nocturne</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ps2/582958-shin-megami-tensei-nocturne/faqs">PS2</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/pc/714064-the-sims-4">
+					<img class="crop imgboxart" src="/a/box/7/7/7/279777_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/pc/714064-the-sims-4">The Sims 4</a>
+					</span>
+					<span class="sub plats">
+												<a href="/pc/714064-the-sims-4/faqs">PC</a>
+												<a href="/ps4/214128-the-sims-4/faqs">PS4</a>
+												<a href="/xboxone/214129-the-sims-4/faqs">XONE</a>
+												<a href="/mac/714065-the-sims-4/faqs">MAC</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/3ds/251075-yo-kai-watch-3">
+					<img class="crop imgboxart" src="/a/box/8/5/1/687851_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/3ds/251075-yo-kai-watch-3">Yo-kai Watch 3</a>
+					</span>
+					<span class="sub plats">
+												<a href="/3ds/251075-yo-kai-watch-3/faqs">3DS</a>
+											</span>
+				</div>
+			</li>
+					</ol>
+	</div>
+</div>
+
+<div class="spacer"></div>
+																											<div class="js-mapped-ad ad ad_mpu_plus_top" data-ad-type="mpu_plus_top"><div class="ad_wrap "></div></div>
+																									<div class="pod pod_list sidebar full topgames">
+	<div class="head"><h2 class="title">Latest Reviews</h2></div>
+	<div class="body">
+		<ol class="list_flex">
+						<li>
+				<a class="img_med" href="/3ds/195500-miitopia">
+					<img class="crop imgboxart" src="/a/box/3/0/6/629306_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/3ds/195500-miitopia">Miitopia</a>
+					</span>
+					<span class="sub plats">
+												<a href="/3ds/195500-miitopia/reviews">3DS</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/pc/292894-resident-evil-village">
+					<img class="crop imgboxart" src="/a/box/7/7/9/755779_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/pc/292894-resident-evil-village">Resident Evil Village</a>
+					</span>
+					<span class="sub plats">
+												<a href="/pc/292894-resident-evil-village/reviews">PC</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ps5/292804-returnal">
+					<img class="crop imgboxart" src="/a/box/7/6/3/755763_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ps5/292804-returnal">Returnal</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ps5/292804-returnal/reviews">PS5</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ps4/167071-tales-of-berseria">
+					<img class="crop imgboxart" src="/a/box/1/7/1/591171_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ps4/167071-tales-of-berseria">Tales of Berseria</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ps4/167071-tales-of-berseria/reviews">PS4</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ps4/218734-yakuza-kiwami-2">
+					<img class="crop imgboxart" src="/a/box/0/2/1/667021_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ps4/218734-yakuza-kiwami-2">Yakuza Kiwami 2</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ps4/218734-yakuza-kiwami-2/reviews">PS4</a>
+											</span>
+				</div>
+			</li>
+					</ol>
+	</div>
+</div>
+
+<div class="spacer"></div>
+
+<div class="pod pod_list sidebar full topgames">
+	<div class="head"><h2 class="title">Latest Cheats</h2></div>
+	<div class="body">
+		<ol class="list_flex">
+						<li>
+				<a class="img_med" href="/switch/319986-baldurs-gate-dark-alliance">
+					<img class="crop imgboxart" src="/a/box/7/7/3/12773_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/switch/319986-baldurs-gate-dark-alliance">Baldur's Gate: Dark Alliance</a>
+					</span>
+					<span class="sub plats">
+												<a href="/switch/319986-baldurs-gate-dark-alliance/cheats">NS</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/switch/250575-cattails">
+					<img class="crop imgboxart" src="/a/box/0/3/4/690034_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/switch/250575-cattails">Cattails</a>
+					</span>
+					<span class="sub plats">
+												<a href="/switch/250575-cattails/cheats">NS</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ds/937800-spider-man-3">
+					<img class="crop imgboxart" src="/a/box/7/7/1/73771_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ds/937800-spider-man-3">Spider-Man 3</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ds/937800-spider-man-3/cheats">DS</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/pc/979867-the-legend-of-heroes-trails-in-the-sky-sc">
+					<img class="crop imgboxart" src="/a/box/7/7/7/297777_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/pc/979867-the-legend-of-heroes-trails-in-the-sky-sc">The Legend of Heroes: Trails in the Sky SC</a>
+					</span>
+					<span class="sub plats">
+												<a href="/pc/979867-the-legend-of-heroes-trails-in-the-sky-sc/cheats">PC</a>
+											</span>
+				</div>
+			</li>
+						<li>
+				<a class="img_med" href="/ps2/927390-x-men-legends-ii-rise-of-apocalypse">
+					<img class="crop imgboxart" src="/a/box/1/3/5/67135_thumb.jpg" alt=""/>
+				</a>
+				<div class="info">
+					<span class="main">
+						<a href="/ps2/927390-x-men-legends-ii-rise-of-apocalypse">X-Men Legends II: Rise of Apocalypse</a>
+					</span>
+					<span class="sub plats">
+												<a href="/ps2/927390-x-men-legends-ii-rise-of-apocalypse/cheats">PS2</a>
+											</span>
+				</div>
+			</li>
+					</ol>
+	</div>
+</div>
+																
+							</aside>
+						</div>
+										
+																			</div>
+				
+								<div class="js-mapped-ad ad ad_leader_bottom" data-ad-type="leader_bottom"><div class="ad_wrap "></div></div>
+				
+			</div>
+						<div class="js-mapped-ad ad ad_interstitial" data-ad-type="interstitial"><div class="ad_wrap "></div></div>
+
+							<footer id="footer" class="footer"><div class="footer_site container row"><a href="/" class="footer_logo_gf">GameFAQs</a><a href="http://www.facebook.com/GFAQs"><i class="fa fa-facebook-square"></i>facebook.com/GFAQs</a><a href="http://www.twitter.com/GameFAQs"><i class="fa fa-twitter"></i>twitter.com/GameFAQs</a><span class="footer_break"></span><a href="/help">Help / Contact Us</a><span class="footer_color_drop" id="color_change"><a href="/features/change_color">Change Colors <i class="fa fa-caret-up"></i></a><ul class="footer_color_subnav"><li class="footer_color_subnav_item"><a href="/user/change_color?site_color=blue&amp;path=%2Fnew">Blue (Default)</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=dark-blue&amp;path=%2Fnew">Blue on Black</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=red&amp;path=%2Fnew">Red</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=dark-red&amp;path=%2Fnew">Red on Black</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=green&amp;path=%2Fnew">Green</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=dark-green&amp;path=%2Fnew">Green on Black</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=orange&amp;path=%2Fnew">Orange</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=dark-orange&amp;path=%2Fnew">Orange on Black</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=purple&amp;path=%2Fnew">Purple</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=dark-purple&amp;path=%2Fnew">Purple on Black</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=cloudy&amp;path=%2Fnew">Cloudy Blue</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=grayscale&amp;path=%2Fnew">Grayscale</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=sepia&amp;path=%2Fnew">Sepia</a></li>
+<li class="footer_color_subnav_item"><a href="/user/change_color?site_color=cottoncandy&amp;path=%2Fnew">Cotton Candy</a></li>
+</ul></span></div><div class="footer_network"><div class="container row"><p><a href="https://www.gamespot.com/?utm_source=gamefaqs&utm_medium=partner&utm_content=footer&utm_campaign=footer" class="footer_logo_gs">gamespot.com</a><a href="https://www.giantbomb.com/" class="footer_logo_gb">giantbomb.com</a><a href="https://www.metacritic.com/" class="footer_logo_mc">metacritic.com</a></p><p><span class="footer_break"></span><a href="http://gamefaqs.gamespot.com/sitemap">Sitemap</a><a href="mailto:gamespotpartnerships@redventures.com">Partnerships</a><a href="https://careers.redventures.com/">Careers</a><a href="https://redventures.com/CMG-terms-of-use.html">Terms of Use</a></p><p><span class="footer_break"></span><a href="https://redventures.com/privacy-policy.html">Privacy Policy</a><a class="ot-sdk-show-settings">Cookie Settings</a><a href="https://privacyportal.onetrust.com/webform/79ba7c84-ebc2-4740-8d11-bf1cc4501e59/ae88e03f-2b16-4276-9980-27124ba4b2c1">Do Not Sell My Information</a><a style="z-index: 999999999; color: red; cursor: pointer" onclick="ad_report();">Report&nbsp;Ad</a></p><p>&copy; 2021 GAMESPOT, A RED VENTURES COMPANY. ALL RIGHTS RESERVED.</p></div></div></footer>
+
+
+							
+		</div>
+		
+		
+		<div id="site_dialog" class="site_dialog"></div>
+		
+<script type="text/javascript">
+window.BidBarrel.queue.push(function(resolve){
+	const googletag = window.googletag;
+	googletag.cmd.push(function(){ googletag.pubads().addEventListener('slotRenderEnded',revdbg); });
+	resolve();
+});
+
+// utag_data
+(function(){ let utag_data;try{ utag_data=JSON.parse($('#utag-data').attr('content')); }catch(e){ utag_data={}; }window.utag_data=$.extend({},window.utag_data,utag_data); })();
+</script>
+
+<script type="text/plain" class="optanon-category-C0002">
+    (function(a,b,c,d){    
+    a='//tags.tiqcdn.com/utag/redventures/gamefaqssite/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
+
+<script src="/a/js/adDivManager.20210521195711.js"></script>
+<script src="/a/js/adManager.20210521195711.js"></script>		
+<!--Page built in 12 ms on 2021-05-24 02:36:12 on box #146 (CSS 20210521195711 JS 20210521195711)- O 6.1 / S 4.1 / M 1.8 / U 0 / SC 2-->
+			<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"NRBR-a22c617a7b2aab2da1c","applicationID":"578849005","transactionName":"NgYBNkBYWEEEAURQWg9MNhBbFkZTAgdDFlsEFE0SWkk=","queueTime":0,"applicationTime":12,"atts":"GkECQAhCS08=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>
