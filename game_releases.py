@@ -1,5 +1,6 @@
 # Collect information about upcoming game releases.
 
+from tkinter import Tk
 import json
 import pyautogui
 import re
@@ -14,21 +15,23 @@ site_url = "https://gamefaqs.gamespot.com/new"
 regexName = re.compile('<div class="sr_name"><a href="(.*?)">(.*?)</a>')
 regexDate = re.compile('<div class="sr_info">(.*)')
 
-### Let's open the bad boy.
-##browser = webdriver.Chrome()
-##browser.get(site_url)
-##
-##pyautogui.rightClick(870, 480)
-##pyautogui.click(940, 720)
-##pyautogui.hotkey('ctrl', 'a')
-##pyautogui.hotkey('ctrl', 'c')
+# Let's open the bad boy.
+browser = webdriver.Chrome()
+browser.get(site_url)
 
-# Open our text file, because apparently this is how we're going to handle it.
-text_file = open("code.txt", "r")
+pyautogui.rightClick(870, 480)
+pyautogui.click(940, 720)
+pyautogui.hotkey('ctrl', 'a')
+pyautogui.hotkey('ctrl', 'c')
 
-res = text_file.read()
+res = Tk().clipboard_get()
 
-text_file.close()
+### Open our text file, because apparently this is how we're going to handle it.
+##text_file = open("game_releases.txt", "r")
+
+##res = text_file.read()
+
+##text_file.close()
 
 names = regexName.findall(res)
 dates = regexDate.findall(res)
@@ -36,6 +39,7 @@ dates = regexDate.findall(res)
 newDates = []
 newNames = []
 copyText = ""
+i = 0
 
 newList = dict()
 
@@ -52,11 +56,13 @@ for date in dates:
 ##    for date in newDates:
 ##        newList[name] = date
 
+##for name in newNames:
+##    for date in newDates:
+##        copyText += name + " : " + date + ", \n"
+
 for name in newNames:
-    for date in newDates:
-        copyText += name + " : " + date ", \n"
+    copyText += newNames[i] + " : " + newDates[i] + ", \n"
+    i = i + 1
 
-pprint(newList)
-
-##with open("game_releases.txt", "w") as f:
-##    f.write(json.dumps(newList))
+with open("game_releases.txt", "w") as f:
+    f.write(copyText)
