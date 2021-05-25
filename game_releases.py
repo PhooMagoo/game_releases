@@ -1,5 +1,6 @@
 # Collect information about upcoming game releases.
 
+import json
 import pyautogui
 import re
 import pandas as pd
@@ -23,7 +24,7 @@ regexDate = re.compile('<div class="sr_info">(.*)')
 ##pyautogui.hotkey('ctrl', 'c')
 
 # Open our text file, because apparently this is how we're going to handle it.
-text_file = open("game_releases.txt", "r")
+text_file = open("code.txt", "r")
 
 res = text_file.read()
 
@@ -34,6 +35,7 @@ dates = regexDate.findall(res)
 
 newDates = []
 newNames = []
+copyText = ""
 
 newList = dict()
 
@@ -46,8 +48,15 @@ for date in dates:
     else:
         newDates.append(date)
 
+##for name in newNames:
+##    for date in newDates:
+##        newList[name] = date
+
 for name in newNames:
     for date in newDates:
-        newList[name] = date
+        copyText += name + " : " + date ", \n"
 
 pprint(newList)
+
+##with open("game_releases.txt", "w") as f:
+##    f.write(json.dumps(newList))
