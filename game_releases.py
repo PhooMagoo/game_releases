@@ -52,11 +52,10 @@ for date in dates:
 ##    for date in newDates:
 ##        newList[name] = date
 
-for name in newNames:
-    for date in newDates:
-        copyText += name + " : " + date ", \n"
+for i in range(len(newNames)):
+            copyText = copyText + newNames[i] + " : " + newDates[i] + ", \n"
 
-pprint(newList)
+pprint(copyText)
 
-##with open("game_releases.txt", "w") as f:
-##    f.write(json.dumps(newList))
+with open("game_releases.txt", "w") as f:
+    f.write(copyText)
