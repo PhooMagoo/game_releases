@@ -27,6 +27,7 @@ browser.get(site_url)
 # Copy the HTML from our specified site.
 pyautogui.rightClick(870, 480)
 pyautogui.click(940, 720)
+pyautogui.click(940, 720)
 pyautogui.hotkey('ctrl', 'a')
 pyautogui.hotkey('ctrl', 'c')
 
